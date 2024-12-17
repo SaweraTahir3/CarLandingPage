@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./img//car-logo.png" alt="" class="logo">
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Feattures</a>
+                <a href="">variations</a>
+                <a href="">Specials</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="text">
+            <h4>Powerful, Fun & </h4>
+            <h1>Fierce to <br> <span>Drive</span></h1>
+            <p>Real Poise , Real Power , Real Perfomance.</p>
+            <a href="#" class="btn">Book a test ride</a>
+        </div>
+    </div>
+    <script>
+        let heroBG = document.querySelector('.hero');
+        setInterval(() => {
+            heroBG.style.backgroundImage = 'url(img/bg-light.jpg)'
+            setTimeout(() => {
+                heroBG.style.backgroundImage = 'url(img/bg.jpg)'
+            }, 1000)
+
+        }, 2200);
+    </script>
+
+</body>
+
+</html>
